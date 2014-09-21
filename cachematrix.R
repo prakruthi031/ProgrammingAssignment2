@@ -1,6 +1,6 @@
-There are two functions in this code. The functions together is used to compute the inverse of a matrix. It is also sophisticated to cache the matrix inverse and avoid repeated computation of the inverse of a mtrix.
+There are two functions in this code. The functions together is used to compute the inverse of a matrix. It is also sophisticated to cache the matrix inverse (store the value if previously computed) and avoid repeated computation of the inverse of a matrix.
 
-The below function is used to get the matrix for inverse computation, set the matrix variable to the given matrix. It is also used to compute the inverse of a matrix and set the value of the computed inverse to the inverse matrix variable.
+The below function is used to get the matrix for inverse computation, set the matrix variable to the given matrix. It is also used to compute the inverse of a matrix and set the value of the computed inverse to the inverse matrix variable. The function returns a list of outputs of four functions - set, get, setinv, getinv.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -30,3 +30,5 @@ cacheSolve <- function(x, ...) {
   x$setinv(m)
   m
 }
+
+End of assignment.
